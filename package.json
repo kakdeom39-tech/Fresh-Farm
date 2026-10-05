@@ -1,0 +1,27 @@
+{
+  "name": "fresh-farm-mern",
+  "version": "1.0.0",
+  "description": "Fresh Farm - MERN Stack with Realtime Map Live Tracking, Razorpay & Google Auth",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "mern",
+    "fresh-farm",
+    "socket.io",
+    "realtime-tracking",
+    "razorpay",
+    "google-auth"
+  ],
+  "author": "Fresh Farm Team",
+  "license": "ISC"
+}
